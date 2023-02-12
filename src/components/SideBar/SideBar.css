@@ -11,19 +11,37 @@
     font-size: 1.25rem;
 }
 
-#side-bar #creators-list{
+:is(#creators-list,#favorites-list){
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-#side-bar #creators-list li{
+
+:is(#creators-list li,#favorites-list li){
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#side-bar #creators-list li>div:first-child{
+:is(#creators-list li>div:first-child,#favorites-list li>div:first-child){
     display: flex;
     gap: 1.5rem;
+}
+#favorites-list li>div:first-child .favorite-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 2rem;
+    background-position: center;
+    background-size: cover;
+}
+#favorites-list li>div:first-child .favorite-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+#favorites-list li>div:first-child .favorite-info>p:last-child, #favorites-list li .favorite-date{
+    color: var(--text-grey);
+    font-size: 0.875rem;
 }
 #side-bar #creators-list li>div:first-child .creator-image{
     width:50px;
