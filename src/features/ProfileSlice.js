@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toggleCreator } from "./CreatorsSlice";
 import profile from './profile.jpg';
 
 const ProfileSlice = createSlice({
@@ -22,13 +23,26 @@ const ProfileSlice = createSlice({
             state.followedArtists.push(action.payload);
         },
         unfollowArtist: (state,action) => {
-            state.followedArtists.filter(artist => artist.id!== action.payload.id)
+            state.followedArtists.filter(followedArtist => followedArtist.id!== action.payload.id)
         },
         resetNotifications: (state) => {
             state.notifications = 0;
         }
     }
 })
+
+export const followThunkActionCreator = creator => {
+    return (dispatch) => {
+        dispatch(toggleCreator(creator.id))
+        dispatch(followArtist(creator))
+    }
+}
+export const unfollowThunkActionCreator = creator => {
+    return (dispatch) => {
+        dispatch(toggleCreator(creator.id))
+        dispatch(unfollowArtist(creator))
+    }
+}
 
 export const selectProfile = (state) => state.profile;
 export const { addFavorites, removeFavorites, followArtist, unfollowArtist, resetNotifications } = ProfileSlice.actions;

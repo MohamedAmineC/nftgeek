@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SideBar from '../SideBar/SideBar';
 import './Home.css';
 
 const Home = () => {
@@ -22,9 +23,7 @@ const Home = () => {
                     <div></div>
                 </div>
             </div>
-            <div id='side-bar'>
-
-            </div>
+            <SideBar />
         </div>
     )
 }
