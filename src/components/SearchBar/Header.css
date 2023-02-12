@@ -39,6 +39,9 @@ header #notifications{
     display: grid;
     place-content: center;
 }
+header #notifications i{
+    cursor: pointer;
+}
 header #profile{
     display: flex;
     align-items: center;

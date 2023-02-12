@@ -1,0 +1,57 @@
+#homepage{
+    height: -webkit-fill-available;
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#homepage #main-content{
+    width: 70%;
+    padding: 0 1rem;
+}
+#homepage #main-content #hero{
+    height: 350px;
+    border-radius: 2rem;
+    background-image: url('./hero-background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+#homepage #main-content #hero h2{
+    font-size: 2.5rem;
+}
+#homepage #main-content #hero>div{
+    width: 50%;
+    height: 100%;
+}
+#homepage #main-content #hero #hero-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#homepage #main-content #hero #hero-content>div{
+    display: flex;
+    gap: 1rem;
+}
+#homepage #main-content #hero #hero-content>div a{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+#homepage #main-content #hero #hero-content>div a:first-child{
+    background-color: var(--white);
+    color: #000;
+    font-weight: bold;
+}
+#homepage #main-content #hero #hero-image{
+    background-image: url('./hero-img.jpg') ;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+#homepage #side-bar{
+    width: 30%;
+    background-color: var(--color-grey);
+    border-top-left-radius: 2rem;
+}
