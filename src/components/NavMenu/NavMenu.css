@@ -19,7 +19,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: #687A82;
+    color: var(--text-grey);
 }
 nav ul li{
     display:flex;

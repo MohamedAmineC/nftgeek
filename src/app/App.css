@@ -3,3 +3,7 @@
   height: 100vh;
   display: flex;
 }
+main{
+  width: 85%;
+  padding: 2rem 0 0 2rem;
+}
