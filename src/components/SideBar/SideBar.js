@@ -35,13 +35,13 @@ const SideBar = () => {
                             </div>
                             {creator.following ? (<div className='following' onClick={() => {
                                 dispatch(toggleCreator(creator.id));
-                                dispatch(unfollowArtist(creator))
+                                dispatch(unfollowArtist(creator.id))
                             }}>
                                 <p>following</p>
                             </div>) : (
                                 <div className='follow' onClick={() =>{
                                     dispatch(toggleCreator(creator.id));
-                                    dispatch(followArtist(creator))
+                                    dispatch(followArtist(creator.id))
                                 }}>
                                     <p>follow</p>
                                 </div>
