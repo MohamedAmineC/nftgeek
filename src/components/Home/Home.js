@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar';
 import './Home.css';
+import Trending from './Trending';
 
 const Home = () => {
     return(
@@ -18,10 +19,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div id='trending'>
-                    <div></div>
-                    <div></div>
-                </div>
+                <Trending />
             </div>
             <SideBar />
         </div>

@@ -50,6 +50,46 @@
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
+#homepage #trending>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#homepage #trending>div:first-child ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+:is(#left-arrow,#right-arrow){
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--color-bg);
+    cursor: pointer;
+}
+#categories-container{
+    display: flex;
+    overflow: hidden;
+    width: 40%;
+}
+#left-arrow{
+    display: none;
+}
+
+#right-arrow{
+    right: 0;
+}
+#homepage #trending>div:first-child ul li button{
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--text-grey);
+    border: 0;
+    cursor: pointer;
+}
+#homepage #trending>div:first-child ul li button.active-category{
+    color: var(--white);
+    border-bottom: 1px solid var(--color-blue);
+}
 #homepage #side-bar{
     width: 30%;
     background-color: var(--color-grey);

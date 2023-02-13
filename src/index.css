@@ -8,6 +8,9 @@
     --text-grey: #687A82;
     --white: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
