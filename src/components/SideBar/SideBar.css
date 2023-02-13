@@ -79,3 +79,9 @@
     place-content: center;
     cursor: pointer;
 }
+#side-bar #copyright{
+    margin-block: 3rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-grey);
+}

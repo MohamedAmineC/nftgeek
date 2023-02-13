@@ -68,6 +68,9 @@ const SideBar = () => {
                     ))
                 }
             </ul>
+            <div id='copyright'>
+                <p>copyright &copy; 2023 NFTGEEK</p>
+            </div>
         </div>
     )
 } 

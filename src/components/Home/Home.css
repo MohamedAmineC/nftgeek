@@ -180,6 +180,7 @@
     padding: 1.5rem;
     border-radius: 2rem;
     background-color: var(--color-blue);
+    cursor: pointer;
 }
 #homepage #side-bar{
     width: 30%;
