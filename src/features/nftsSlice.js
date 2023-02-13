@@ -9,7 +9,7 @@ const nftsSlice = createSlice({
     name: "nfts",
     initialState: [
         {
-            id: 1,
+            id: 4,
             name: "Koecing Pemalaz",
             creator: "Akatsuki",
             image: art1,
@@ -29,7 +29,7 @@ const nftsSlice = createSlice({
             ]
         },
         {
-            id: 2,
+            id: 5,
             name: "Kelinci Keren Abiezz",
             creator: "pickpocket",
             image: art2,
@@ -38,7 +38,7 @@ const nftsSlice = createSlice({
             timeLeft: '2:12:22',
             bids: [
                 {
-                    id: 2,
+                    id: 1,
                     bidder: 'Tama_Art',
                     bidderImg: bidder2,
                     price: '4.2',
