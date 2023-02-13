@@ -38,17 +38,16 @@ const ProfileSlice = createSlice({
     },
     reducers: {
         addFavorites: (state,action) => {
-            state.favorites.push(action.payload);
+            state.favorites.unshift(action.payload);
         },
         removeFavorites: (state,action) => {
-            state.favorites.filter(favorite => favorite.id !== action.payload.id)
+            state.favorites = state.favorites.filter(favorite => favorite.id !== action.payload.id)
         },
         followArtist: (state,action) => {
             state.followedArtists.push(action.payload);
         },
         unfollowArtist: (state,action) => {
             state.followedArtists = state.followedArtists.filter(id => {
-                console.log(id)
                return  id!== action.payload})
         },
         resetNotifications: (state) => {

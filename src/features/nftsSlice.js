@@ -11,8 +11,8 @@ const nftsSlice = createSlice({
         {
             id: 4,
             name: "Koecing Pemalaz",
-            creator: "Akatsuki",
-            image: art1,
+            author: "Akatsuki",
+            img: art1,
             category: 'Art',
             liked: false,
             timeLeft: '4:22:15',
@@ -31,8 +31,8 @@ const nftsSlice = createSlice({
         {
             id: 5,
             name: "Kelinci Keren Abiezz",
-            creator: "pickpocket",
-            image: art2,
+            author: "pickpocket",
+            img: art2,
             category: 'Art',
             liked: false,
             timeLeft: '2:12:22',
@@ -50,9 +50,16 @@ const nftsSlice = createSlice({
         }
     ],
     reducers: {
-
+        toggleLikeNft: (state,action) => {
+            state = state.map(nft => {
+                if (nft.id === action.payload.id) {
+                return    nft.liked =!nft.liked;
+                } else return nft
+            })
+        }
     }
 })
 
 export const selectNfts = state => state.nfts;
+export const { toggleLikeNft } = nftsSlice.actions;
 export default nftsSlice.reducer;

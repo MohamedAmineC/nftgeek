@@ -8,7 +8,7 @@ const SideBar = () => {
     const creators = useSelector(selectCreators);
     const profile =useSelector(selectProfile);
     const dispatch = useDispatch();
-    console.log(creators);
+    
     return (
         <div id='side-bar'>
             <div id='favourites'>

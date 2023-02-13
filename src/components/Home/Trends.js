@@ -1,11 +1,13 @@
-import { useSelector } from "react-redux";
-import { selectNfts } from "../../features/nftsSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleLikeNft, selectNfts } from "../../features/nftsSlice";
+import { addFavorites, removeFavorites } from "../../features/ProfileSlice";
 
 const Trends = (props) => {
     const {category} = props;
+    const dispatch = useDispatch();
     const nfts = useSelector(selectNfts);
     const filteredNfts = nfts.filter(nft => nft.category === category);
-    console.log(filteredNfts);
+    
 
     return (
         <div id="trending-nfts">
@@ -14,16 +16,36 @@ const Trends = (props) => {
                     filteredNfts.map(nft => (
                         <li key={nft.id}>
                             <div className="nft-image" style={{
-                                backgroundImage: `url(${nft.image})`
+                                backgroundImage: `url(${nft.img})`
                             }}>
-                                <div className={nft.liked ? 'liked' : 'like'}>
-                                    <i class="bi bi-heart-fill"></i>
-                                </div>
+                                
+                                {nft.liked ? (
+                                    <div className="liked" onClick={() => {
+                                        dispatch(toggleLikeNft(nft));
+                                        dispatch(removeFavorites(nft))
+
+                                    }}>
+                                        <i class="bi bi-heart-fill"></i>
+                                    </div>
+                                ) : (
+                                    <div className="like" onClick={(e) => {
+                                        let d = new Date();
+                                        d = d.toDateString();
+                                        dispatch(toggleLikeNft(nft));
+                                        dispatch(addFavorites({
+                                           ...nft,
+                                            liked: d,
+                                        }))
+                                    }}>
+                                        <i class="bi bi-heart-fill"></i>
+                                    </div>
+                                ) }
+                                
                             </div>
                             <div className="nft-description">
                                 <div>
                                     <p>{nft.name}</p>
-                                    <p>- {nft.creator}</p>
+                                    <p>- {nft.author}</p>
                                 </div>
                                 <div className="nft-time-remaining">
                                     <p>{nft.timeLeft}</p>
