@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Trending = () => {
     const [category, setCategory] = useState('Art');
     const categories = ['Art', 'Music', 'Game', 'Utility', 'Fashion','Sport'];
 
-    window.onload = () => {
+    useEffect(() => {
         const scrollLeft = document.getElementById("left-arrow");
     const scrollRight = document.getElementById("right-arrow");
     const container = document.getElementById("categories-container");
@@ -44,7 +44,7 @@ const Trending = () => {
         }
       });
     }
-    }
+    },[])
     
 
     const changeCategory = (e) => {
