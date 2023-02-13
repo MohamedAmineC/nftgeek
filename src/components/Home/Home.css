@@ -126,7 +126,7 @@
     cursor: pointer;
 }
 #homepage #trending-nfts ul>li .nft-image>div.liked{
-    color: red;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 #homepage #trending-nfts ul>li .nft-description{
     display: flex;

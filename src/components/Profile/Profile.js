@@ -8,9 +8,17 @@ const Profile = (props) => {
     return(
         <div id="settings">
                 <div id="notifications" onClick={() => dispatch(resetNotifications())}>
-                    {profile.notifications > 0 ? <i class="bi bi-bell" style={{
+                    {profile.notifications > 0 ? (
+                    <div>
+                    <i class="bi bi-bell" style={{
                         color: 'red',
-                    }}></i> : <i class="bi bi-bell"></i>}
+                    }}></i>
+                    <div>
+                        <p>{profile.notifications}</p>
+                    </div>
+                    </div>
+                    
+                    ) : <i class="bi bi-bell"></i>}
                 </div>
                 <div id="profile">
                     <div id="profile-image" style={{

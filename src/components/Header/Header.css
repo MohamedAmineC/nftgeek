@@ -38,9 +38,27 @@ header #notifications{
     background-color: var(--color-grey);
     display: grid;
     place-content: center;
-}
-header #notifications i{
     cursor: pointer;
+}
+header #notifications>div {
+    position: relative;
+}
+
+header #notifications i {
+    font-size: 1.5rem;
+}
+
+header #notifications>div>div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:rgba(255,0,0,0.8);
+    display: grid;
+    place-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 0.625rem;
 }
 header #profile{
     display: flex;

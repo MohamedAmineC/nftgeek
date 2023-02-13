@@ -10,7 +10,7 @@ const ProfileSlice = createSlice({
         id: 1,
         name: 'Joko Williams',
         profile: profile,
-        notifications: 1,
+        notifications: 25,
         favorites: [
             {
                 id: 1,
