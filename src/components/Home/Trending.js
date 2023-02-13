@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Trends from "./Trends";
 
 const Trending = () => {
     const [category, setCategory] = useState('Art');
@@ -8,13 +9,7 @@ const Trending = () => {
         const scrollLeft = document.getElementById("left-arrow");
     const scrollRight = document.getElementById("right-arrow");
     const container = document.getElementById("categories-container");
-
-    console.log(scrollLeft);
-    console.log(scrollRight);
-    console.log(container);
-
-    
-    
+      
     scrollLeft.addEventListener('click', function() {
         if (container.scrollLeft > 0) {
           container.scrollLeft -= 150;
@@ -77,7 +72,7 @@ const Trending = () => {
                     <div id="right-arrow"><i class="bi bi-arrow-right-square"></i></div>
                 </div>
             </div>
-            <div></div>
+            <Trends category={category} />
         </div>
     )
 }
