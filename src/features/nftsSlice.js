@@ -35,7 +35,8 @@ const nftsSlice = createSlice({
             img: art2,
             category: 'Art',
             liked: false,
-            timeLeft: '2:12:22',
+            timeLeft: '2:22:22',
+            active: true,
             bids: [
                 {
                     id: 1,
@@ -56,10 +57,26 @@ const nftsSlice = createSlice({
                 return    nft.liked =!nft.liked;
                 } else return nft
             })
+        },
+        changeLeftTime: (state,action) => {
+            state = state.map(nft => {
+                if (nft.id === action.payload.id) {
+                return    nft.timeLeft = action.payload.timeLeft;
+                } else return nft
+            })
+        },
+        toggleUnactive: (state,action) => {
+            state = state.map(nft => {
+                if (nft.id === action.payload.id) {
+                    nft.timeLeft = '00:00:00';
+                return    nft.active = false;
+                } else return nft
+            })
         }
+
     }
 })
 
 export const selectNfts = state => state.nfts;
-export const { toggleLikeNft } = nftsSlice.actions;
+export const { toggleLikeNft,changeLeftTime,toggleUnactive } = nftsSlice.actions;
 export default nftsSlice.reducer;
