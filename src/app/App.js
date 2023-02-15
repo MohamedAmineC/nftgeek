@@ -4,7 +4,7 @@ import NavMenu from '../components/NavMenu/NavMenu';
 import Header from '../components/Header/Header';
 import './App.css';
 import Home from '../components/Home/Home';
-import Active from '../Pages/Active';
+import Active from '../Pages/Active/Active';
 
 function App() {
   return (

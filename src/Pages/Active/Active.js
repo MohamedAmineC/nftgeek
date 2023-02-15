@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import { selectNfts } from "../features/nftsSlice";
-import NFT from "../components/NFT/NFT";
+import { selectNfts } from "../../features/nftsSlice";
+import NFT from "../../components/NFT/NFT";
 import './Active.css';
-import SideBar from "../components/SideBar/SideBar";
+import SideBar from "../../components/SideBar/SideBar";
 
 const Active =() => {
     const nfts = useSelector(selectNfts);
