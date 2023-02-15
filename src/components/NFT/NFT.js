@@ -44,8 +44,9 @@ const NFT = ({nft}) => {
                 <Countdown expires={nft.expires} id={nft.id} />
             </div>
         </div>
-        <ul className="bids-list">
-            {nft.bids.map(bid => (
+            {nft.bids.length > 0 && nft.bids.map(bid => (
+            <>
+            <ul className="bids-list">
                 <li key={bid.id}>
                     <div className="bid-bidder">
                         <div className="bidder-image" style={{
@@ -70,11 +71,12 @@ const NFT = ({nft}) => {
                         </div>
                     </div>
                 </li>
-            ))}
         </ul>
         <div>
             <p>Place a Bid</p>
         </div>
+        </>
+            ))}
         </>
     )
 }
