@@ -4,6 +4,7 @@ import NavMenu from '../components/NavMenu/NavMenu';
 import Header from '../components/Header/Header';
 import './App.css';
 import Home from '../components/Home/Home';
+import Active from '../Pages/Active';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/active" element={<Active />} />
         </Routes>
       </main>
     </div>
