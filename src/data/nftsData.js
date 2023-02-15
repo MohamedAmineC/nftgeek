@@ -51,10 +51,10 @@ export const nftsData = [
                 id: 1,
                 bidder: 'Tama_Art',
                 bidderImg: bidder2,
-                price: '4.2',
+                price: '0.2',
                 verified: true,
-                currency: eth,
-                currencyName: 'ETH'
+                currency: bitcoin,
+                currencyName: 'BTC'
             }
         ]
     },
