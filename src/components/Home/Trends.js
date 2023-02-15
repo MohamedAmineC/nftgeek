@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleLikeNft, selectNfts } from "../../features/nftsSlice";
 import { addFavorites, removeFavorites } from "../../features/ProfileSlice";
+import Countdown from "./Countdown";
 
 const Trends = (props) => {
     const {category} = props;
@@ -14,7 +15,7 @@ const Trends = (props) => {
             <ul>
                 {
                     filteredNfts.map(nft => {
-                        if (nft.active === false) return null;
+                        if (nft.isExpired === true) return null;
                         else {
                             return (
                                 (
@@ -53,7 +54,7 @@ const Trends = (props) => {
                                                 <p>- {nft.author}</p>
                                             </div>
                                             <div className="nft-time-remaining">
-                                                <p>{nft.timeLeft}</p>
+                                                <Countdown expires={nft.expires} id={nft.id} />
                                             </div>
                                         </div>
                                         <ul className="bids-list">

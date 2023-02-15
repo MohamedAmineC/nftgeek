@@ -15,7 +15,8 @@ const nftsSlice = createSlice({
             img: art1,
             category: 'Art',
             liked: false,
-            timeLeft: '4:22:15',
+            expires: 'February 18, 2023 11:01:00',
+            isExpired: false,
             bids: [
                 {
                     id: 1,
@@ -35,8 +36,8 @@ const nftsSlice = createSlice({
             img: art2,
             category: 'Art',
             liked: false,
-            timeLeft: '2:22:22',
-            active: true,
+            expires: 'February 19, 2023 16:00:00',
+            isExpired: false,
             bids: [
                 {
                     id: 1,
@@ -67,9 +68,8 @@ const nftsSlice = createSlice({
         },
         toggleUnactive: (state,action) => {
             state = state.map(nft => {
-                if (nft.id === action.payload.id) {
-                    nft.timeLeft = '00:00:00';
-                return    nft.active = false;
+                if (nft.id === action.payload) {
+                return    nft.isExpired = true;
                 } else return nft
             })
         }
