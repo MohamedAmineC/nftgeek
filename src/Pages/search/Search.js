@@ -32,9 +32,7 @@ const Search = () => {
                                             return (
                                                 (
                                                     <li key={nft.id}>
-                                                        <Link to={`/nft/${nft.id}`}>
                                                             <NFT nft={nft} />
-                                                        </Link>
                                                     </li>
                                                 )
                                             )

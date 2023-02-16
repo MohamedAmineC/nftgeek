@@ -55,7 +55,7 @@
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
-#homepage #trending-nfts>ul>li,#homepage #searchPage>ul>li>a{
+#homepage #trending-nfts>ul>li,#homepage #searchPage>ul>li{
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 2rem;
@@ -136,7 +136,7 @@
     place-content: end end;
     color: var(--color-blue);
 }
-#homepage #trending-nfts>ul>li>a>div:last-child,#homepage #searchPage>ul>li>a>div:last-child{
+#homepage #trending-nfts>ul>li>div:last-child,#homepage #searchPage>ul>li>div:last-child{
     padding: 1.5rem;
     border-radius: 2rem;
     background-color: var(--color-blue);
