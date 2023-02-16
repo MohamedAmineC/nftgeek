@@ -1,22 +1,22 @@
-#homepage{
+#searchpage{
     height: -webkit-fill-available;
     display: flex;
     gap: 1rem;
 }
-#homepage #main-content{
+#searchpage #main-content{
     width: 70%;
     padding-left: 1rem;
     overflow-y: scroll;
     padding-bottom: 6rem;
 }
 
-#homepage #trending>div:first-child {
+#searchpage #trending>div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-#homepage #trending>div:first-child ul{
+#searchpage #trending>div:first-child ul{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -39,23 +39,23 @@
 #right-arrow{
     right: 0;
 }
-#homepage #trending>div:first-child ul li button{
+#searchpage #trending>div:first-child ul li button{
     padding: 1rem;
     background-color: transparent;
     color: var(--text-grey);
     border: 0;
     cursor: pointer;
 }
-#homepage #trending>div:first-child ul li button.active-category{
+#searchpage #trending>div:first-child ul li button.active-category{
     color: var(--white);
     border-bottom: 1px solid var(--color-blue);
 }
-#homepage #trending-nfts>ul, #homepage #searchPage>ul{
+#searchpage #trending-nfts>ul, #searchpage #searchPage>ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
-#homepage #trending-nfts>ul>li,#homepage #searchPage>ul>li{
+#searchpage #trending-nfts>ul>li,#searchpage #searchPage>ul>li{
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 2rem;
@@ -136,13 +136,13 @@
     place-content: end end;
     color: var(--color-blue);
 }
-#homepage #trending-nfts>ul>li>div:last-child,#homepage #searchPage>ul>li>div:last-child{
+#searchpage #trending-nfts>ul>li>div:last-child,#searchpage #searchPage>ul>li>div:last-child{
     padding: 1.5rem;
     border-radius: 2rem;
     background-color: var(--color-blue);
     cursor: pointer;
 }
-#homepage #side-bar{
+#searchpage #side-bar{
     width: 30%;
     background-color: var(--color-grey);
     border-top-left-radius: 2rem;

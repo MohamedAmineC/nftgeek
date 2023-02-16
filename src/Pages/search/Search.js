@@ -18,7 +18,7 @@ const Search = () => {
 
 
     return(
-        <div id="homepage">
+        <div id="searchpage">
             <div id='main-content'>
                 <div id="searchPage">
                     <h2>your search for {term}</h2>
