@@ -6,49 +6,10 @@
 #homepage #main-content{
     width: 70%;
     padding-left: 1rem;
+    overflow-y: scroll;
+    padding-bottom: 6rem;
 }
-#homepage #main-content #hero{
-    height: 350px;
-    border-radius: 2rem;
-    background-image: url('./hero-background.jpg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-}
-#homepage #main-content #hero h2{
-    font-size: 2.5rem;
-}
-#homepage #main-content #hero>div{
-    width: 50%;
-    height: 100%;
-}
-#homepage #main-content #hero #hero-content{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-#homepage #main-content #hero #hero-content>div{
-    display: flex;
-    gap: 1rem;
-}
-#homepage #main-content #hero #hero-content>div a{
-    font-size: 1rem;
-    padding: 1rem;
-    border-radius: 2rem;
-}
-#homepage #main-content #hero #hero-content>div a:first-child{
-    background-color: var(--white);
-    color: #000;
-    font-weight: bold;
-}
-#homepage #main-content #hero #hero-image{
-    background-image: url('./hero-img.jpg') ;
-    background-position: center;
-    background-size: cover;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
+
 #homepage #trending>div:first-child {
     display: flex;
     justify-content: space-between;
@@ -89,12 +50,12 @@
     color: var(--white);
     border-bottom: 1px solid var(--color-blue);
 }
-#homepage #trending-nfts>ul{
+#homepage #trending-nfts>ul, #homepage #searchPage>ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
-#homepage #trending-nfts>ul>li{
+#homepage #trending-nfts>ul>li,#homepage #searchPage>ul>li>a{
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 2rem;
@@ -104,7 +65,7 @@
     gap: 1rem;
     box-sizing: border-box;
 }
-#homepage #trending-nfts ul>li .nft-image{
+.nft-image{
     width: 10rem;
     height: 10rem;
     border-radius: 2rem;
@@ -115,7 +76,7 @@
     box-sizing: border-box;
     justify-content: flex-end;
 }
-#homepage #trending-nfts ul>li .nft-image>div {
+.nft-image>div{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -124,22 +85,22 @@
     place-content: center;
     cursor: pointer;
 }
-#homepage #trending-nfts ul>li .nft-image>div.liked{
+.nft-image>div.liked{
     background-color: rgba(255, 0, 0, 0.5);
 }
-#homepage #trending-nfts ul>li .nft-description{
+.nft-description{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-#homepage #trending-nfts>ul>li .nft-description>div:first-child{
+.nft-description>div:first-child{
     display: flex;
     flex-direction: column;
     gap: 0.75;
     font-size: 1.25rem;
 }
-#homepage #trending-nfts>ul>li .nft-description>div:last-child{
+.nft-description>div:last-child{
     background-color: var(--text-grey);
     font-size: 0.75rem;
     padding: 1rem;
@@ -148,24 +109,24 @@
     place-content: center;
 
 }
-#homepage #trending-nfts>ul>li .bids-list{
+ .bids-list{
     width: 100%;
 }
-#homepage #trending-nfts>ul>li .bids-list>li{
+ .bids-list>li{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#homepage #trending-nfts>ul>li .bids-list>li .bid-bidder, #homepage #trending-nfts>ul>li .bids-list>li .bid-price{
+.bid-bidder, .bid-price{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-#homepage #trending-nfts>ul>li .bids-list>li .bidder-info>p:first-child, #homepage #trending-nfts>ul>li .bids-list>li .bid-price .bid-pricing>p:first-child{
+.bidder-info>p:first-child, .bid-pricing>p:first-child{
     font-size: 0.75rem;
     color: var(--text-grey);
 }
-#homepage #trending-nfts>ul>li .bids-list>li .bid-bidder .bidder-image, #homepage #trending-nfts>ul>li .bids-list>li .bid-price .bid-image{
+.bidder-image, .bid-image{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -175,7 +136,7 @@
     place-content: end end;
     color: var(--color-blue);
 }
-#homepage #trending-nfts>ul>li>div:last-child{
+#homepage #trending-nfts>ul>li>a>div:last-child,#homepage #searchPage>ul>li>a>div:last-child{
     padding: 1.5rem;
     border-radius: 2rem;
     background-color: var(--color-blue);
