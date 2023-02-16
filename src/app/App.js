@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import './App.css';
 import Home from '../components/Home/Home';
 import Active from '../Pages/Active/Active';
+import Favorite from '../Pages/Favorite/Favorite';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/active" element={<Active />} />
+          <Route path='/favorites' element={<Favorite />} />
         </Routes>
       </main>
     </div>

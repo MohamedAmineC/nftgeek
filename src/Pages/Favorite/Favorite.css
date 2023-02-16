@@ -1,0 +1,108 @@
+#FavoritePage{
+    height: -webkit-fill-available;
+    padding-right: 5rem;
+}
+#FavoritePage #main-content{
+    padding-left: 1rem;
+    overflow: auto;
+}
+
+#FavoritePage #trending-nfts>ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+#FavoritePage #trending-nfts>ul>li{
+    background-color: var(--color-grey);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+#FavoritePage #trending-nfts ul>li .nft-image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    position: relative;
+}
+#FavoritePage #trending-nfts ul>li .nft-image>div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+#FavoritePage #trending-nfts ul>li .nft-image>div.liked{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#FavoritePage #trending-nfts ul>li .nft-description{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#FavoritePage #trending-nfts>ul>li .nft-description>div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75;
+    font-size: 1.25rem;
+}
+#FavoritePage #trending-nfts>ul>li .nft-description>div:last-child{
+    background-color: var(--text-grey);
+    font-size: 0.75rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: grid;
+    place-content: center;
+
+}
+
+#favorite-artists #creators-list li>div:first-child .creator-image{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-blue);
+    display: grid;
+    place-content: end end;
+}
+#favorite-artists #creators-list li>div:first-child .creator-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#favorite-artists #creators-list li>div:first-child .creator-info .creator-tag{
+    color: var(--text-grey);
+    font-size:0.75rem;
+}
+#favorite-artists #creators-list li .follow{
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--color-blue);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+#favorite-artists #creators-list li .following{
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--white);
+    color: var(--color-blue);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
