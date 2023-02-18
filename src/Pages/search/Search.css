@@ -6,7 +6,7 @@
 #searchpage #main-content{
     width: 70%;
     padding-left: 1rem;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 6rem;
 }
 
