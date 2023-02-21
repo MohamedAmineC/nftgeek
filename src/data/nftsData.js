@@ -23,7 +23,7 @@ export const nftsData = [
         img: art1,
         category: 'Art',
         liked: false,
-        expires: 'February 18, 2023 11:01:00',
+        expires: 'February 31, 2023 11:01:00',
         isExpired: false,
         bids: [
             {
@@ -44,7 +44,7 @@ export const nftsData = [
         img: art2,
         category: 'Art',
         liked: false,
-        expires: 'February 19, 2023 16:00:00',
+        expires: 'February 31, 2023 16:00:00',
         isExpired: false,
         bids: [
             {
@@ -65,7 +65,7 @@ export const nftsData = [
         img: music1,
         category: 'Music',
         liked: false,
-        expires: 'February 20, 2023 17:00:00',
+        expires: 'February 31, 2023 17:00:00',
         isExpired: false,
         bids: [
             {
@@ -128,7 +128,7 @@ export const nftsData = [
         img: game2,
         category: 'Game',
         liked: false,
-        expires: 'February 21, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -149,7 +149,7 @@ export const nftsData = [
         img: utility1,
         category: 'Utility',
         liked: false,
-        expires: 'February 22, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -170,7 +170,7 @@ export const nftsData = [
         img: utility2,
         category: 'Utility',
         liked: false,
-        expires: 'February 23, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -191,7 +191,7 @@ export const nftsData = [
         img: fashion1,
         category: 'Fashion',
         liked: false,
-        expires: 'February 22, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -212,7 +212,7 @@ export const nftsData = [
         img: fashion2,
         category: 'Fashion',
         liked: false,
-        expires: 'February 23, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -233,7 +233,7 @@ export const nftsData = [
         img: Sport1,
         category: 'Sport',
         liked: false,
-        expires: 'February 22, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {
@@ -254,7 +254,7 @@ export const nftsData = [
         img: Sport2,
         category: 'Sport',
         liked: false,
-        expires: 'February 23, 2023 23:00:00',
+        expires: 'February 31, 2023 23:00:00',
         isExpired: false,
         bids: [
             {

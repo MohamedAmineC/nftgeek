@@ -1,10 +1,11 @@
 #FavoritePage{
     height: -webkit-fill-available;
     padding-right: 5rem;
+    padding-bottom: 8rem;
+    overflow: auto;
 }
 #FavoritePage #main-content{
     padding-left: 1rem;
-    overflow: auto;
 }
 
 #FavoritePage #trending-nfts>ul{
