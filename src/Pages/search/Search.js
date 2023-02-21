@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { selectNfts } from '../../features/nftsSlice';
 import './Search.css';
 import { useSelector } from 'react-redux';
@@ -12,11 +12,7 @@ const Search = () => {
     const term = searchTerm.get('q');
     const nfts = useSelector(selectNfts);
     const filteredNfts = nfts.filter(nft => nft.name.toLowerCase().includes(term));
-    console.log(filteredNfts)
-
-    console.log(term)
-
-
+    
     return(
         <div id="searchpage">
             <div id='main-content'>
@@ -32,7 +28,9 @@ const Search = () => {
                                             return (
                                                 (
                                                     <li key={nft.id}>
-                                                            <NFT nft={nft} />
+                                                            <Link to={`/nft/${nft.id}`}>
+                                                                <NFT nft={nft} />
+                                                            </Link>
                                                     </li>
                                                 )
                                             )

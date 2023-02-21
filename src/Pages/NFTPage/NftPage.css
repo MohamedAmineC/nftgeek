@@ -1,61 +1,15 @@
-#searchpage{
+#nftPage{
     height: -webkit-fill-available;
     display: flex;
     gap: 1rem;
 }
-#searchpage #main-content{
+#nftPage #main-content{
     width: 70%;
     padding-left: 1rem;
     overflow-y: auto;
     padding-bottom: 6rem;
 }
-
-#searchpage #trending>div:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-#searchpage #trending>div:first-child ul{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-:is(#left-arrow,#right-arrow){
-    position: absolute;
-    padding: 1rem;
-    background-color: var(--color-bg);
-    cursor: pointer;
-}
-#categories-container{
-    display: flex;
-    overflow: hidden;
-    width: 40%;
-}
-#left-arrow{
-    display: none;
-}
-
-#right-arrow{
-    right: 0;
-}
-#searchpage #trending>div:first-child ul li button{
-    padding: 1rem;
-    background-color: transparent;
-    color: var(--text-grey);
-    border: 0;
-    cursor: pointer;
-}
-#searchpage #trending>div:first-child ul li button.active-category{
-    color: var(--white);
-    border-bottom: 1px solid var(--color-blue);
-}
-#searchpage #trending-nfts>ul, #searchpage #searchPage>ul{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1rem;
-}
-#searchpage #trending-nfts>ul>li,#searchpage #searchPage>ul>li>a{
+.nft{
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 2rem;
@@ -75,8 +29,9 @@
     padding: 0.5rem;
     box-sizing: border-box;
     justify-content: flex-end;
+    position: relative;
 }
-.nft-image>div{
+.nft-image>div {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -107,9 +62,8 @@
     border-radius: 2rem;
     display: grid;
     place-content: center;
-
 }
- .bids-list{
+.bids-list{
     width: 100%;
 }
  .bids-list>li{
@@ -136,13 +90,13 @@
     place-content: end end;
     color: var(--color-blue);
 }
-#searchpage #trending-nfts>ul>li>div:last-child,#searchpage #searchPage>ul>li>div:last-child{
+.nft>div:last-child{
     padding: 1.5rem;
     border-radius: 2rem;
     background-color: var(--color-blue);
     cursor: pointer;
 }
-#searchpage #side-bar{
+#nftPage #side-bar{
     width: 30%;
     background-color: var(--color-grey);
     border-top-left-radius: 2rem;

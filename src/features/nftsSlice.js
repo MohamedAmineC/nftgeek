@@ -26,7 +26,6 @@ const nftsSlice = createSlice({
                 } else return nft
             })
         }
-
     }
 })
 
